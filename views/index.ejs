@@ -1,0 +1,23 @@
+<h1>Home</h1>
+<h3>Data Mahasiswa</h3>
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Umur</th>
+
+    </tr>
+    <tr>
+        <% mahasiswa.forEach(mhs=> { %>
+            <td>
+                <%= mhs.nama %>
+            </td>
+            <td>
+                <%= mhs.umur %>
+            </td>
+    </tr>
+    <% }) %>
+</table>
+
+<% if (mahasiswa.length < 1) { %>
+    <p>Tidak Ada</p>
+    <% } %>
